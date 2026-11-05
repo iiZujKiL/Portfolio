@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Kovac – Portfolio BTS SIO SISR</title>
+  <meta name="description" content="Portfolio de Hugo Kovac, étudiant en BTS SIO option SISR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fond animé -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Hugo Kovac</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Accueil</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">À propos</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li class="nav-item"><a href="#parcours" class="nav-link">Parcours</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projets</a></li>
+        <li class="nav-item"><a href="#veille" class="nav-link">Veille</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><button id="theme-toggle" aria-label="Changer de thème"><i class="fas fa-moon"></i></button></li>
+      </ul>
+      <div class="hamburger" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="hero-name">Hugo Kovac</span>
+          <span class="hero-subtitle">Étudiant en BTS SIO - Option SISR</span>
+        </h1>
+        <p class="hero-description">Bienvenue sur mon Portfolio</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Découvrir mon profil</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-elements">
+          <div class="floating-element"></div>
+          <div class="floating-element"></div>
+          <div class="floating-element"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">À propos</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Étudiant en 2<sup>e</sup> année de BTS SIO SISR</h3>
+          <p>Je m'appelle Hugo Kovac et je prépare le BTS Services Informatiques aux Organisations, option Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+          <p><em>[À personnaliser : présente ton parcours, ce qui t'a donné envie de faire de l'informatique, tes centres d'intérêt et ton projet après le BTS.]</em></p>
+          <div class="cv-download">
+            <a href="docs/CV_Hugo_Kovac.pdf" class="cv-btn" download><i class="fas fa-download"></i> Télécharger mon CV</a>
+          </div>
+        </div>
+        <div class="skills">
+          <h4>Mes compétences</h4>
+          <p class="skills-hint">Clique sur une carte pour en savoir plus.</p>
+          <div class="skill-cards-grid">
+            <div class="skill-card"><i class="fas fa-ticket-alt skill-icon"></i><span class="skill-name">Ticketing</span><a href="#" class="skill-learn-more" data-skill="ticketing">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fas fa-cubes skill-icon"></i><span class="skill-name">Virtualisation</span><a href="#" class="skill-learn-more" data-skill="virtualisation">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fas fa-users-cog skill-icon"></i><span class="skill-name">Active Directory</span><a href="#" class="skill-learn-more" data-skill="ad">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fas fa-network-wired skill-icon"></i><span class="skill-name">TCP/IP &amp; Réseaux</span><a href="#" class="skill-learn-more" data-skill="reseaux">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fas fa-project-diagram skill-icon"></i><span class="skill-name">Cisco Packet Tracer</span><a href="#" class="skill-learn-more" data-skill="cisco">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fab fa-windows skill-icon"></i><span class="skill-name">Windows Server</span><a href="#" class="skill-learn-more" data-skill="windows">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fab fa-linux skill-icon"></i><span class="skill-name">Linux (Debian/Ubuntu)</span><a href="#" class="skill-learn-more" data-skill="linux">En savoir plus →</a></div>
+            <div class="skill-card"><i class="fas fa-code skill-icon"></i><span class="skill-name">Visual Studio Code</span><a href="#" class="skill-learn-more" data-skill="vscode">En savoir plus →</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications &amp; attestations</h2>
+    </div>
+    <div class="certifications-container">
+      <div class="certifications-track">
+        <!-- Duplique ce bloc pour chaque certification et remplace l'image -->
+        <article class="certification-card">
+          <div class="cert-image"><img class="cert-img screenshot-thumb" src="images/certif-1.png" alt="Certification 1" onerror="this.style.opacity='.15'"></div>
+          <div class="cert-content">
+            <h3>Nom de la certification</h3>
+            <p>Organisme – date d'obtention</p>
+            <ul><li>Compétence validée 1</li><li>Compétence validée 2</li></ul>
+          </div>
+        </article>
+        <article class="certification-card">
+          <div class="cert-image"><img class="cert-img screenshot-thumb" src="images/certif-2.png" alt="Certification 2" onerror="this.style.opacity='.15'"></div>
+          <div class="cert-content">
+            <h3>Nom de la certification</h3>
+            <p>Organisme – date d'obtention</p>
+            <ul><li>Compétence validée 1</li><li>Compétence validée 2</li></ul>
+          </div>
+        </article>
+        <article class="certification-card">
+          <div class="cert-image"><img class="cert-img screenshot-thumb" src="images/certif-3.png" alt="Certification 3" onerror="this.style.opacity='.15'"></div>
+          <div class="cert-content">
+            <h3>Nom de la certification</h3>
+            <p>Organisme – date d'obtention</p>
+            <ul><li>Compétence validée 1</li><li>Compétence validée 2</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn cert-prev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-indicators" id="cert-slider-indicators"></div>
+      <button class="slider-btn cert-next" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours" class="parcours-bg">
+    <div class="container">
+      <h2 class="section-title">Parcours</h2>
+      <div class="parcours-content">
+        <div class="parcours-column">
+          <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-content">
+                  <h4>BTS SIO option SISR</h4>
+                  <div class="timeline-period">2024 – 2026</div>
+                  <div class="timeline-place">[Établissement]</div>
+                  <p>Administration des systèmes et des réseaux, cybersécurité, virtualisation.</p>
+                </div>
+                <button class="btn btn-secondary btn-learn-more-parcours" data-id="bts-sio">En savoir plus</button>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="timeline-content">
+                  <h4>[Baccalauréat]</h4>
+                  <div class="timeline-period">[Années]</div>
+                  <div class="timeline-place">[Lycée]</div>
+                  <p>[Spécialité / option]</p>
+                </div>
+                <button class="btn btn-secondary btn-learn-more-parcours" data-id="bac">En savoir plus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parcours-column">
+          <h3><i class="fas fa-briefcase"></i> Expériences</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot timeline-dot-exp"></div>
+              <div class="timeline-card">
+                <div class="timeline-content">
+                  <h4>[Poste / Stage]</h4>
+                  <div class="timeline-period">[Période]</div>
+                  <div class="timeline-place">[Entreprise]</div>
+                  <p>[Missions principales réalisées.]</p>
+                </div>
+                <button class="btn btn-secondary btn-learn-more-parcours" data-id="exp1">En savoir plus</button>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot timeline-dot-exp"></div>
+              <div class="timeline-card">
+                <div class="timeline-content">
+                  <h4>[Poste / Stage]</h4>
+                  <div class="timeline-period">[Période]</div>
+                  <div class="timeline-place">[Entreprise]</div>
+                  <p>[Missions principales réalisées.]</p>
+                </div>
+                <button class="btn btn-secondary btn-learn-more-parcours" data-id="exp2">En savoir plus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projets &amp; réalisations</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image"><img src="images/projet-1.png" alt="Projet 1" onerror="this.style.opacity='.15'"></div>
+          <div class="project-content">
+            <h3>Titre du projet 1</h3>
+            <p>Contexte, objectifs et solution mise en place.</p>
+            <div class="project-tags"><span class="tag">Windows Server</span><span class="tag">Active Directory</span><a class="tag tag-learn-more" href="docs/fiche-realisation-1.pdf">Fiche de réalisation</a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="images/projet-2.png" alt="Projet 2" onerror="this.style.opacity='.15'"></div>
+          <div class="project-content">
+            <h3>Titre du projet 2</h3>
+            <p>Contexte, objectifs et solution mise en place.</p>
+            <div class="project-tags"><span class="tag">pfSense</span><span class="tag">VLAN</span><a class="tag tag-learn-more" href="docs/fiche-realisation-2.pdf">Fiche de réalisation</a></div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="images/projet-3.png" alt="Projet 3" onerror="this.style.opacity='.15'"></div>
+          <div class="project-content">
+            <h3>Titre du projet 3</h3>
+            <p>Contexte, objectifs et solution mise en place.</p>
+            <div class="project-tags"><span class="tag">Linux</span><span class="tag">Supervision</span><a class="tag tag-learn-more" href="docs/fiche-realisation-3.pdf">Fiche de réalisation</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="cv-download center">
+        <a href="docs/tableau-de-synthese.pdf" class="cv-btn"><i class="fas fa-file-pdf"></i> Tableau de synthèse</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEILLE -->
+  <section id="veille" class="veille">
+    <div class="container">
+      <h2 class="section-title">Veille technologique</h2>
+      <div class="veille-subtitle">
+        <h3>Thème : [à compléter]</h3>
+        <p>Ex. cybersécurité, virtualisation, cloud, IA appliquée aux infrastructures…</p>
+      </div>
+      <div class="slider-container">
+        <div class="slider-wrapper"><div class="slider" id="veille-slider"></div></div>
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-indicators" id="slider-indicators"></div>
+          <button class="slider-btn next-btn" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="veille-conclusion">
+        <h3>Conclusion</h3>
+        <p>[Résume ici ce que ta veille t'a appris et son intérêt pour ton futur métier.]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details"><h4>Email</h4><a href="mailto:ton.email@exemple.fr">ton.email@exemple.fr</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-details"><h4>LinkedIn</h4><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Mon profil LinkedIn</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-details"><h4>GitHub</h4><a href="https://github.com/" target="_blank" rel="noopener">Mon profil GitHub</a></div>
+          </div>
+        </div>
+        <form class="contact-form" action="mailto:ton.email@exemple.fr" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group"><input type="text" name="nom" placeholder="Votre nom" required></div>
+            <div class="form-group"><input type="email" name="email" placeholder="Votre email" required></div>
+          </div>
+          <div class="form-group"><input type="text" name="sujet" placeholder="Sujet" required></div>
+          <div class="form-group"><textarea name="message" placeholder="Votre message" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Hugo Kovac</h4>
+        <p>Étudiant en BTS SIO option SISR, passionné par les systèmes, les réseaux et la cybersécurité.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:ton.email@exemple.fr" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> À propos</a></li>
+          <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projets</a></li>
+          <li><a href="#veille"><i class="fas fa-chevron-right"></i> Veille</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Hugo Kovac – BTS SIO SISR</p></div>
+  </footer>
+
+  <!-- MODALES -->
+  <div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content"><img id="modal-image" alt=""></div>
+  </div>
+
+  <div id="skillModal" class="modal">
+    <div class="modal-content">
+      <span class="skill-modal-close modal-close">&times;</span>
+      <button class="skill-modal-nav prev" aria-label="Précédent"><i class="fas fa-chevron-left"></i></button>
+      <h3 id="skillModalTitle"></h3>
+      <p id="skillModalDescription"></p>
+      <div id="skillModalWebsiteLink"></div>
+      <button class="skill-modal-nav next" aria-label="Suivant"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
